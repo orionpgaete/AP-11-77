@@ -1,0 +1,7 @@
+C:\Users\Orion\source\repos\Vespertino-AP(11)-77\HolaMundo\HolaMundo\bin\Debug\HolaMundo.exe.config
+C:\Users\Orion\source\repos\Vespertino-AP(11)-77\HolaMundo\HolaMundo\bin\Debug\HolaMundo.exe
+C:\Users\Orion\source\repos\Vespertino-AP(11)-77\HolaMundo\HolaMundo\bin\Debug\HolaMundo.pdb
+C:\Users\Orion\source\repos\Vespertino-AP(11)-77\HolaMundo\HolaMundo\obj\Debug\HolaMundo.csprojAssemblyReference.cache
+C:\Users\Orion\source\repos\Vespertino-AP(11)-77\HolaMundo\HolaMundo\obj\Debug\HolaMundo.csproj.CoreCompileInputs.cache
+C:\Users\Orion\source\repos\Vespertino-AP(11)-77\HolaMundo\HolaMundo\obj\Debug\HolaMundo.exe
+C:\Users\Orion\source\repos\Vespertino-AP(11)-77\HolaMundo\HolaMundo\obj\Debug\HolaMundo.pdb
