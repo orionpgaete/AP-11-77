@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\AdminPersona"
+    "\\AdminPersona",
+    "\\AdminPersona\\AdminPersona",
+    "\\AdminPersona\\AdminPersonasModel"
   ],
-  "SelectedNode": "\\AdminPersona\\AdminPersona.sln",
+  "SelectedNode": "\\AdminPersona\\AdminPersonasModel",
   "PreviewInSolutionExplorer": false
 }
