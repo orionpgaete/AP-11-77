@@ -1,0 +1,6 @@
+C:\Users\Orion\source\repos\orionpgaete\AP-11-77\HolaMundoThread\HolaMundoThread\bin\Debug\HolaMundoThread.exe.config
+C:\Users\Orion\source\repos\orionpgaete\AP-11-77\HolaMundoThread\HolaMundoThread\bin\Debug\HolaMundoThread.exe
+C:\Users\Orion\source\repos\orionpgaete\AP-11-77\HolaMundoThread\HolaMundoThread\obj\Debug\HolaMundoThread.csprojAssemblyReference.cache
+C:\Users\Orion\source\repos\orionpgaete\AP-11-77\HolaMundoThread\HolaMundoThread\obj\Debug\HolaMundoThread.csproj.CoreCompileInputs.cache
+C:\Users\Orion\source\repos\orionpgaete\AP-11-77\HolaMundoThread\HolaMundoThread\obj\Debug\HolaMundoThread.exe
+C:\Users\Orion\source\repos\orionpgaete\AP-11-77\HolaMundoThread\HolaMundoThread\obj\Debug\HolaMundoThread.pdb
