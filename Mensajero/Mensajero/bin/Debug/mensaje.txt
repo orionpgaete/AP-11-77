@@ -1,0 +1,2 @@
+pedro;whola desde consola;Aplicacion
+maria;hola otra vez;Aplicacion

@@ -16,7 +16,7 @@ namespace Mensajero
         {
             bool continuar = true;
             Console.WriteLine("¿Que quiere hacer?");
-            Console.WriteLine("1. Ingresar \n 2. Mostrar \n 0. Salir");
+            Console.WriteLine(" 1. Ingresar \n 2. Mostrar \n 0. Salir");
             switch (Console.ReadLine().Trim())
             {
                 case "1": Ingresar();
@@ -50,8 +50,13 @@ namespace Mensajero
             mensajesDAL.AgregarMensaje(mensaje);
         }
 
-        static void Mostrar() 
-        { 
+        static void Mostrar()
+        {
+            List<Mensaje> mensajes = mensajesDAL.ObtenerMensajes();
+            foreach(Mensaje mensaje in mensajes)
+            {
+                Console.WriteLine(mensaje);
+            }
         
         }
 
