@@ -1,9 +1,14 @@
-﻿using MensajeroModel.DAL;
+﻿using Mensajero.Comunicacion;
+using MensajeroModel.DAL;
 using MensajeroModel.DTO;
+using ServerSocketUtils;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Mensajero
@@ -30,8 +35,19 @@ namespace Mensajero
             }
             return continuar;
         }
+ 
         static void Main(string[] args)
         {
+            // 1. Iniciar el servidor socket en el puerto 3000
+            // 2. el puerto tiene que ser configurable App.config
+            // 3. Cuando reciba un cliente, tiene que solicitar a ese cliente el nombre y el texto, 
+            //    y agregar un nuevo mensaje con el tipo TCP
+
+            HebraServidor hebra = new HebraServidor();
+            Thread t = new Thread(new ThreadStart(hebra.Ejecutar));
+            t.IsBackground = true;
+            t.Start();
+   
             while (Menu()) ;
         }
 
