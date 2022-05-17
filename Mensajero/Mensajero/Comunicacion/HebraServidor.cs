@@ -7,14 +7,14 @@ using System.Configuration;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Mensajero.Comunicacion
 {
     public class HebraServidor
     {
-        private static IMensajesDAL mensajesDAL = MensajesDALArchivos.GetInstancia();
-        public void Ejecutar()
+       public void Ejecutar()
         {
             int puerto = Convert.ToInt32(ConfigurationManager.AppSettings["puerto"]);
             ServerSocket server = new ServerSocket(puerto);
@@ -29,19 +29,11 @@ namespace Mensajero.Comunicacion
 
                     //esto estaba en generar comunicacion
                     ClienteCom clienteCom = new ClienteCom(cliente);
-                    clienteCom.Escribir("Ingrese nombre :");
-                    string nombre = clienteCom.Leer();
-                    clienteCom.Escribir("Ingrese texto :");
-                    string texto = clienteCom.Leer();
 
-                    Mensaje mensaje = new Mensaje()
-                    {
-                        Nombre = nombre,
-                        Texto = texto,
-                        Tipo = "TCP"
-                    };
-                    mensajesDAL.AgregarMensaje(mensaje);
-                    clienteCom.Desconectar();
+                    HebraCliente clienteThread = new HebraCliente(clienteCom);
+                    Thread t = new Thread(new ThreadStart(clienteThread.Ejecutar));
+                    t.IsBackground = true;
+                    t.Start();
                 }
             }
             else
