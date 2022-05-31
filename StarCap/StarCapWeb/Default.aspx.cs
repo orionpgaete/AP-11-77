@@ -13,5 +13,10 @@ namespace StarCapWeb
         {
 
         }
+
+        protected void agregarBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
