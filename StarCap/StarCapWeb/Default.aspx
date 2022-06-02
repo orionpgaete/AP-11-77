@@ -22,10 +22,7 @@
                     <div class="form-group">
                         <label for="bebidaDdl">Bebida Favorita</label>
                         <asp:DropDownList runat="server" ID="bebidaDdl" CssClass="form-control">
-                            <asp:ListItem Text="Frapuccino" Value="FRAP-01"></asp:ListItem>
-                            <asp:ListItem Text="Cafe del dia" Value="CAF-01"></asp:ListItem>
-                            <asp:ListItem Text="Te del dia" Value="TE-01"></asp:ListItem>
-                            <asp:ListItem Text="Te Chai" Value="TE-02"></asp:ListItem>
+
                         </asp:DropDownList>
                     </div>
                     <div class="form-group">
