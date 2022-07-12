@@ -8,9 +8,10 @@ namespace EventosModel.DAL
 {
     public class RegionesDALDB : IRegionesDAL
     {
+        private EventosDBEntities eventosDB = new EventosDBEntities();
         public List<Region> ObtenerRegiones()
         {
-            throw new NotImplementedException();
+            return this.eventosDB.Regions.ToList();
         }
     }
 }
