@@ -42,9 +42,14 @@ namespace EventosModel.DAL
             aOriginal.Apellido = a.Apellido;
             this.eventosDB.SaveChanges();
         }
+
         public List<Asistente> ObtenerAsistentes(string estado)
         {
-            throw new NotImplementedException();
+            //LINQ
+            var query = from a in this.eventosDB.Asistentes
+                        where a.Estado == estado
+                        select a;
+            return query.ToList();
         }
     }
 }
